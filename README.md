@@ -2,13 +2,13 @@
 
 ## DEV INFO
 
-# Ports
+### Ports
 The node server runs on `port 9000`, 
 React frontend runs on `port 3000`,
 Flask server runs on `port 8000`.
 The node server and flask file is located in the `server` folder and the react frontend is located in the `client` folder.
 
-# Project Structure
+### Project Structure
 
 From the frontend the file is encoded into a buffer and sent to the backend. The backend then decodes the buffer and sends it to the flask server. The flask server then decodes the buffer and makes it into a pandas dataframe. 
 
@@ -20,7 +20,7 @@ From the frontend the file is encoded into a buffer and sent to the backend. The
 #### Node has a `/test` endpoint to check if the server is running
 #### Flask also has a `/test` endpoint
 
-## TODOS *(not in order)
+# TODOS *(not in order)
 - [x] Implement a way to send file from frontend to both the servers
 - [x] Display dataframe in terminal (for checking)
 - [ ] Understand the working of the current structure and if necessary make changes
