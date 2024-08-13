@@ -3,7 +3,7 @@
 ## DEV INFO
 
 # Ports
-The node server runs on port 9000, react frontend runs on port 3000 and the flask server runs on port 8000.
+The node server runs on `port 9000`, react frontend runs on `port 3000` and the flask server runs on `port 8000`.
 The node server and flask file is located in the `server` folder and the react frontend is located in the `client` folder.
 
 # Project Structure
