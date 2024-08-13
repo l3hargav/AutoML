@@ -1,32 +1,39 @@
 import { useState } from "react";
 
 function FileUpload() {
-    let [file, setFile] = useState();
+    let [file, setFile] = useState(null);
 
     const handleFileChange = (e) => {
-        if(e.target.file) {
-            setFile(e.target.file);
+        if(e.target.files[0]) {
+            setFile(e.target.files[0]);
             console.log(file);
         }
     };
 
-    const handleUpload = () => {
-        alert("Sending data to server.")
+    const handleUpload = (e) => {
+        e.preventDefault();
+        if(!file) {
+            return;
+        }
+        const formData = new FormData();
+        formData.append('file', file);
+        console.log("Sent data to server");
+        
     
         fetch("/data/file", {
-            data: file
+            method: 'POST',
+            body: formData
         })
-        
+        console.log(formData);
     }
 
     return (
-        <div>
-            <input type="file" onChange={handleFileChange} />
-
-            <div>{file && `${file.name} - ${file.type}`}</div>
-
-            <button onClick={handleUpload}>Upload</button>
-        </div>
+        <form onSubmit={handleUpload}>
+            <div>
+                <input type="file" onChange={handleFileChange} />
+            </div>
+            <button type="submit">Upload</button>
+        </form>
     )
 }
 
