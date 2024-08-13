@@ -10,6 +10,14 @@ The node server and flask file is located in the `server` folder and the react f
 
 From the frontend the file is encoded into a buffer and sent to the backend. The backend then decodes the buffer and sends it to the flask server. The flask server then decodes the buffer and makes it into a pandas dataframe. 
 
+#To Run
+1) Navigate to the `home` directory where the file is stored and run `npm start` to start the node server.
+2) Similarly navigate to `server` directory and run the `server.py` file by `python server.py`.
+3) Navigate to the `client` directory and run `npm start` to start the react frontend.
+
+#### Node has a `/test` endpoint to check if the server is running
+#### Flask also has a `/test` endpoint
+
 ## TODOS *(not in order)
 - [x] Implement a way to send file from frontend to both the servers
 - [x] Display dataframe in terminal (for checking)
