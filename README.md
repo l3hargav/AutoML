@@ -1,7 +1,4 @@
 # AutoML
-
-## DEV INFO
-
 ### Ports
 The node server runs on `port 9000`, 
 React frontend runs on `port 3000`,
