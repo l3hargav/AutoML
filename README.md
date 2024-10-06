@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AutoML
 ### Ports
 The node server runs on `port 9000`, 
@@ -21,14 +20,14 @@ From the frontend the file is encoded into a buffer and sent to the backend. The
 ## TODOS *(not in order)
 - [x] Implement a way to send file from frontend to both the servers
 - [x] Display dataframe in terminal (for checking)
-- [ ] Understand the working of the current structure and if necessary make changes
-- [ ] Research if the current way of sending files is the best way or not
+- [x] Understand the working of the current structure and if necessary make changes
+- [x] Research if the current way of sending files is the best way or not (JUST USE JSON)
 - [ ] Server side:
     - [ ] (?) Take the data and return the description (`df.describe()`) to the frontend for display. (In Progress)
     - [ ] Take input of various options as json, parse it to see what is to be done to the dataset.
     - [ ] Make models (TBD)
 - [ ] Client side:
-    - [ ] Figure out how to display the tabular data (In Progress)
+    - [x] Figure out how to display the tabular data (In Progress)
     - [ ] Make it look nice *(Add CSS)
     - [ ] Make pages or tabs for different steps in the data science lifecycle.
     - [ ] Figure out the best way to send the params to use while processing data.
